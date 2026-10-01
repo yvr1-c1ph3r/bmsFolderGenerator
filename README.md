@@ -4,7 +4,7 @@ beatoraja の選曲画面に出るカスタムフォルダを、GUIで作る Win
 
 ## ダウンロード
 
-[Releases ページ](https://github.com/＜ユーザー名＞/＜リポジトリ名＞/releases/latest) から `beatoraja_folder_maker.zip` をダウンロードしてください。
+[Releases ページ](https://github.com/yvr1-c1ph3r/bms-folder-generator/releases/latest) から `beatoraja_folder_maker.zip` をダウンロードしてください。
 
 解凍すると、`beatoraja_folder_maker.exe` と使い方の `README.md` が入っています。インストールは不要です。exe をダブルクリックすると起動します。
 
