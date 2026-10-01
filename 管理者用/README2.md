@@ -6,6 +6,7 @@
 
 ```
 bms-folder-generator/
+├─ README.md                  GitHub のトップ用（利用者向けの使い方も含む）
 ├─ CLAUDE.md
 ├─ .gitignore                   （配布物を Git から除外）
 ├─ 管理者用/                    ← GitHub に上げる
@@ -15,7 +16,7 @@ bms-folder-generator/
 │   └─ 文字テスト_default.json
 └─ ダウンロードはこちら/        ← Git に入れない。zip を Releases に添付して配る
     ├─ beatoraja_folder_maker.exe
-    ├─ README.md                （Releases へのリンク入り）
+    ├─ README.md                （ルートの README.md と同一）
     └─ beatoraja_folder_maker.zip
 ```
 
@@ -27,7 +28,7 @@ bms-folder-generator/
 2. `ダウンロードはこちら/` の exe を差し替える
 3. exe と README.md を `beatoraja_folder_maker.zip` に固める
 4. GitHub の Releases で新しいリリースを作り、zip を添付する
-5. `ダウンロードはこちら/README.md` の `＜ユーザー名＞/＜リポジトリ名＞` を実際のURLに直す（初回のみ）
+5. README を直したときは、ルートの `README.md` と `ダウンロードはこちら/README.md` を同じ内容にそろえる（zip に入れる README とGitHubのトップは同一）
 
 ## exe を作る
 
