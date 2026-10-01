@@ -4,7 +4,7 @@
 
 ## ダウンロード
 
-[Releases ページ](https://github.com/yvr1-c1ph3r/bms-folder-generator/releases/latest) から `beatoraja_folder_maker.zip` をダウンロードしてください。
+[Releases ページ](https://github.com/yvr1-c1ph3r/bmsFolderGenerator/releases/latest) から `beatoraja_folder_maker.zip` をダウンロードしてください。
 
 解凍すると、`beatoraja_folder_maker.exe` とこの README が入っています。インストールは不要です。
 
