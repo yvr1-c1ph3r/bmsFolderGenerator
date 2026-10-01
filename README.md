@@ -4,13 +4,13 @@
 
 ## ダウンロード
 
-[Releases ページ](https://github.com/yvr1-c1ph3r/bmsFolderGenerator/releases/latest) から `beatoraja_folder_maker.zip` をダウンロードしてください。
+[Releases ページ](https://github.com/yvr1-c1ph3r/bmsFolderGenerator/releases/latest) から `bmsFolderGenerator.zip` をダウンロードしてください。
 
-解凍すると、`beatoraja_folder_maker.exe` とこの README が入っています。インストールは不要です。
+解凍すると、`bmsFolderGenerator.exe` とこの README が入っています。インストールは不要です。
 
 ## 起動のしかた
 
-`beatoraja_folder_maker.exe` をダブルクリックします。好きな場所に置いて構いません（beatoraja のフォルダの中でなくても動きます）。
+`bmsFolderGenerator.exe` をダブルクリックします。好きな場所に置いて構いません（beatoraja のフォルダの中でなくても動きます）。
 
 ウイルス対策ソフトが警告を出すことがあります。Python製のexeによくある誤検知です。消されてしまう場合は、除外設定に入れてください。
 
@@ -18,11 +18,11 @@
 
 | ファイル | 役割 |
 |---|---|
-| `beatoraja_folder_maker.exe` | 本体。これをダブルクリック |
+| `bmsFolderGenerator.exe` | 本体。これをダブルクリック |
 | `README.md` | この説明（GitHubのトップページと同じ内容） |
 | `difficulty_tables.json` | 取り込んだ難易度表の保存先。初回の取得時に自動で作られます |
 
-`difficulty_tables.json` は exe と同じフォルダに作ります。そこに書き込めない場合（Program Files に置いたときなど）は `%LOCALAPPDATA%\beatoraja_folder_maker\` に作ります。実際の場所は起動直後のログに出ます。
+`difficulty_tables.json` は exe と同じフォルダに作ります。そこに書き込めない場合（Program Files に置いたときなど）は `%LOCALAPPDATA%\bmsFolderGenerator\` に作ります。実際の場所は起動直後のログに出ます。
 
 ## 画面の構成
 
@@ -320,7 +320,7 @@ GitHub にあるのは、ソースコードと管理者向けの資料です。�
 
 | 場所 | 内容 |
 |---|---|
-| `管理者用/beatoraja_folder_maker.py` | 本体のソース。標準ライブラリのみ（Python 3.9+） |
+| `管理者用/bmsFolderGenerator.py` | 本体のソース。標準ライブラリのみ（Python 3.9+） |
 | `管理者用/build_exe.bat` | exe を作るバッチ。PyInstaller を自動で入れます |
 | `管理者用/README2.md` | 仕様の根拠、既定値の変え方、配布の手順 |
 | `管理者用/文字テスト_default.json` | スキンで表示できる文字を調べる確認用 |
@@ -329,7 +329,7 @@ GitHub にあるのは、ソースコードと管理者向けの資料です。�
 ソースから動かすときは、次のコマンドを使います。
 
 ```
-python 管理者用/beatoraja_folder_maker.py
+python 管理者用/bmsFolderGenerator.py
 ```
 
 exe を作るときは `管理者用/build_exe.bat` をダブルクリックします。Python とネットワークが必要です。

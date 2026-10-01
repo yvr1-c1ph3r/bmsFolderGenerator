@@ -8,7 +8,7 @@ beatoraja の選曲画面に出るカスタムフォルダを、GUIで作るWind
 
 - 言語: Python 3.9+、**標準ライブラリのみ**（tkinter / sqlite3 / urllib）
 - 配布形態: PyInstaller の onefile exe
-- 単一ファイル構成: `beatoraja_folder_maker.py`（約2,080行）に全部入っています
+- 単一ファイル構成: `bmsFolderGenerator.py`（約2,080行）に全部入っています
 
 外部ライブラリを増やさない方針です。exe のサイズと誤検知を抑えるためです。
 
@@ -18,7 +18,7 @@ GitHub に上げるのは `管理者用/` などの管理用ファイルだけ�
 
 | ファイル | 役割 | 配布 |
 |---|---|---|
-| `管理者用/beatoraja_folder_maker.py` | 本体 | しない |
+| `管理者用/bmsFolderGenerator.py` | 本体 | しない |
 | `管理者用/build_exe.bat` | exe を作る（リポジトリ直下の `配布用/` に出力。Git対象外） | しない |
 | `管理者用/README2.md` | 管理者向け。仕様の根拠・参考資料・既定値の変え方・配布手順 | しない |
 | `管理者用/文字テスト_default.json` | スキンで表示できる文字を調べる確認用 | しない |
@@ -30,7 +30,7 @@ GitHub に上げるのは `管理者用/` などの管理用ファイルだけ�
 ## 動かす・作る
 
 ```
-python 管理者用/beatoraja_folder_maker.py     # そのまま起動
+python 管理者用/bmsFolderGenerator.py     # そのまま起動
 管理者用/build_exe.bat                        # exe を作る（配布用/ に出力。PyInstaller を自動で入れる）
 ```
 
@@ -38,7 +38,7 @@ python 管理者用/beatoraja_folder_maker.py     # そのまま起動
 
 ## コードの地図
 
-`beatoraja_folder_maker.py` を上から順に、区切りコメントで6つに分けています。
+`bmsFolderGenerator.py` を上から順に、区切りコメントで6つに分けています。
 
 1. **定数**（50〜175行あたり）
    `RANGE_DASH` `LE_SYMBOL` `BUILTIN_TABLES` `DEFAULT_*_RANGES` `CLEAR_LAMPS` `DJ_LEVELS` `ALLOWED_KEYS` `ROOT_NAME` `IN_CHUNK` `SIZE_WARN`

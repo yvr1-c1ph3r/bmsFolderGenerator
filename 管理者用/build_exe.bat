@@ -6,8 +6,8 @@ rem ============================================================
 setlocal
 cd /d "%~dp0"
 
-set "SRC=beatoraja_folder_maker.py"
-set "NAME=beatoraja_folder_maker"
+set "SRC=bmsFolderGenerator.py"
+set "NAME=bmsFolderGenerator"
 
 if not exist "%SRC%" (
     echo [ƒGƒ‰[] %SRC% ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB

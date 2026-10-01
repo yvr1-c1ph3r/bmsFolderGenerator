@@ -5,19 +5,19 @@
 ## フォルダ構成
 
 ```
-bms-folder-generator/
+bmsFolderGenerator/
 ├─ README.md                  GitHub のトップ用（利用者向けの使い方も含む）
 ├─ CLAUDE.md
 ├─ .gitignore                   （配布物を Git から除外）
 ├─ 管理者用/                    ← GitHub に上げる
-│   ├─ beatoraja_folder_maker.py
+│   ├─ bmsFolderGenerator.py
 │   ├─ build_exe.bat
 │   ├─ README2.md
 │   └─ 文字テスト_default.json
 └─ ダウンロードはこちら/        ← Git に入れない。zip を Releases に添付して配る
-    ├─ beatoraja_folder_maker.exe
+    ├─ bmsFolderGenerator.exe
     ├─ README.md                （ルートの README.md と同一）
-    └─ beatoraja_folder_maker.zip
+    └─ bmsFolderGenerator.zip
 ```
 
 `build_exe.bat` は exe を `配布用/`（Git対象外）に出力します。できた exe を `ダウンロードはこちら/` に移し、zip を作り直します。
@@ -26,13 +26,13 @@ bms-folder-generator/
 
 1. `build_exe.bat` で exe を作る
 2. `ダウンロードはこちら/` の exe を差し替える
-3. exe と README.md を `beatoraja_folder_maker.zip` に固める
+3. exe と README.md を `bmsFolderGenerator.zip` に固める
 4. GitHub の Releases で新しいリリースを作り、zip を添付する
 5. README を直したときは、ルートの `README.md` と `ダウンロードはこちら/README.md` を同じ内容にそろえる（zip に入れる README とGitHubのトップは同一）
 
 ## exe を作る
 
-`build_exe.bat` をダブルクリックすると、`配布用` フォルダ（リポジトリ直下、Git対象外）に `beatoraja_folder_maker.exe` ができます。
+`build_exe.bat` をダブルクリックすると、`配布用` フォルダ（リポジトリ直下、Git対象外）に `bmsFolderGenerator.exe` ができます。
 
 バッチがやっていること。
 
@@ -46,7 +46,7 @@ Python とネットワークが必要なのはビルドのときだけです。�
 
 ## 記号を変える
 
-スキンのフォントに無い文字は、フォルダ名で豆腐や別の記号に化けます。`beatoraja_folder_maker.py` の先頭近くにある2行を書き換えると、既定値も自動命名も一括で変わります。
+スキンのフォントに無い文字は、フォルダ名で豆腐や別の記号に化けます。`bmsFolderGenerator.py` の先頭近くにある2行を書き換えると、既定値も自動命名も一括で変わります。
 
 ```python
 RANGE_DASH = " - "
@@ -71,7 +71,7 @@ LE_SYMBOL = "≦"
 
 ## 既定値を変える場所
 
-すべて `beatoraja_folder_maker.py` の先頭付近にあります。
+すべて `bmsFolderGenerator.py` の先頭付近にあります。
 
 | 定数 | 中身 |
 |---|---|
